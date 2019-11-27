@@ -1,7 +1,64 @@
 body {
-    background: blue;
-    align-content: center;
+    background: lightgrey;
+    font-family: 'Odibee Sans', cursive;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
 }
+
+div {
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.score-board {
+	border: 3px solid #fff;
+	width: 300px;
+	margin: 40px auto;
+	font-size: 40px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.badge {
+	background: #e2584d;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 10px 6px;
+}
+
+#user-label {
+	position: absolute;
+	top: 50%;
+	left: -5%;
+	transform: translate(-10%, -50%);
+}
+
+#computer-label {
+	position: absolute;
+	top: 50%;
+	right: -5%;
+	transform: translate(10%, -50%);
+}
+
+.results {
+    display: inline-block;
+}
+
 
 /* .choices {
     border: 1px solid #ddd;

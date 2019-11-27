@@ -5,6 +5,12 @@ var scissors = 'images/scissors.png';
 var computerChoices = ["rock", "paper", "scissors"];
 var result = document.getElementById('result');
 
+let userScore = 0;
+let computerScore = 0;
+const userScore_span = document.getElementById('user-score');
+const computerScore_span = document.getElementById('computer-score');
+const scoreBoard_div = document.querySelector('.score-board');
+
 function play(i) {
     var userChoice = i.target.id;
     var imgUserChoice = i.target.src;
@@ -66,9 +72,13 @@ function determineWinner(u, c) {
 
 function showWinner(w) {
     if (w === 'player') {
+        userScore++;
+        userScore_span.innerHTML = userScore;
         result.innerHTML = 'You Win!'
     } else if (w === 'computer') {
+        computerScore++;
         result.innerHTML = 'You Lose!'
+        computerScore_span.innerHTML = computerScore;
     } else if (w === 'draw') {
         result.innerHTML = "It's a tie!"
     }

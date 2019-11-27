@@ -2,24 +2,37 @@
     <head>
         <title>JS RPS</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <h1>JavaScript RockPaperScissors</h1>
-<!-- scoreboard -->
-
+        <h1>Rock | Paper | Scissors</h1>
+        <div class="score-board">
+            <div id="user-label" class="badge">user</div>
+            <div id="computer-label" class="badge">comp</div>
+            <span id="user-score">0</span> : <span id="computer-score">0</span>
+          </div>
         <div class="choices">
             <img id="rock" src="images/rps.png"/>
             <img id="paper" src="images/paper.png"/>
             <img id="scissors" src="images/scissors.png"/>
         </div>
+        <hr/>
         <div>
-            <h1>Results</h1>
-            <img id="userChoice" src=""/>
-            <img id="computerChoice" src=""/>
-            <h4 id='result'></h4>
+            <h2>Results</h2>
         </div>
-        
+        <div>
+            <div class="results">
+                <p>User Choice  |</p>
+                <img id="userChoice" src=""/>
+            </div>
+            <div class="results">
+                <p>  Computer Choice</p>
+                <img id="computerChoice" src=""/>
+            </div>
+        </div>
+        <p id='result'></p>
+
         <script src="index.js">
         </script>
     </body>
